@@ -1,0 +1,554 @@
+/usr/local/opt/llvm@3.7/bin/lli-3.7
+
+###### Testing test-add1
+./m2.native -c tests/test1/pass/test-add1.m2 > test-add1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-add1.ll > test-add1.out
+diff -b test-add1.out tests/test1/pass/test-add1.out > test-add1.diff
+###### SUCCESS
+
+###### Testing test-arith1
+./m2.native -c tests/test1/pass/test-arith1.m2 > test-arith1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-arith1.ll > test-arith1.out
+diff -b test-arith1.out tests/test1/pass/test-arith1.out > test-arith1.diff
+###### SUCCESS
+
+###### Testing test-arith2
+./m2.native -c tests/test1/pass/test-arith2.m2 > test-arith2.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-arith2.ll > test-arith2.out
+diff -b test-arith2.out tests/test1/pass/test-arith2.out > test-arith2.diff
+###### SUCCESS
+
+###### Testing test-arith3
+./m2.native -c tests/test1/pass/test-arith3.m2 > test-arith3.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-arith3.ll > test-arith3.out
+diff -b test-arith3.out tests/test1/pass/test-arith3.out > test-arith3.diff
+###### SUCCESS
+
+###### Testing test-arithbinops
+./m2.native -c tests/test1/pass/test-arithbinops.m2 > test-arithbinops.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-arithbinops.ll > test-arithbinops.out
+diff -b test-arithbinops.out tests/test1/pass/test-arithbinops.out > test-arithbinops.diff
+###### SUCCESS
+
+###### Testing test-fib
+./m2.native -c tests/test1/pass/test-fib.m2 > test-fib.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-fib.ll > test-fib.out
+diff -b test-fib.out tests/test1/pass/test-fib.out > test-fib.diff
+###### SUCCESS
+
+###### Testing test-for1
+./m2.native -c tests/test1/pass/test-for1.m2 > test-for1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-for1.ll > test-for1.out
+diff -b test-for1.out tests/test1/pass/test-for1.out > test-for1.diff
+###### SUCCESS
+
+###### Testing test-for2
+./m2.native -c tests/test1/pass/test-for2.m2 > test-for2.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-for2.ll > test-for2.out
+diff -b test-for2.out tests/test1/pass/test-for2.out > test-for2.diff
+###### SUCCESS
+
+###### Testing test-func1
+./m2.native -c tests/test1/pass/test-func1.m2 > test-func1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-func1.ll > test-func1.out
+diff -b test-func1.out tests/test1/pass/test-func1.out > test-func1.diff
+###### SUCCESS
+
+###### Testing test-func2
+./m2.native -c tests/test1/pass/test-func2.m2 > test-func2.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-func2.ll > test-func2.out
+diff -b test-func2.out tests/test1/pass/test-func2.out > test-func2.diff
+###### SUCCESS
+
+###### Testing test-func3
+./m2.native -c tests/test1/pass/test-func3.m2 > test-func3.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-func3.ll > test-func3.out
+diff -b test-func3.out tests/test1/pass/test-func3.out > test-func3.diff
+###### SUCCESS
+
+###### Testing test-func4
+./m2.native -c tests/test1/pass/test-func4.m2 > test-func4.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-func4.ll > test-func4.out
+diff -b test-func4.out tests/test1/pass/test-func4.out > test-func4.diff
+###### SUCCESS
+
+###### Testing test-func5
+./m2.native -c tests/test1/pass/test-func5.m2 > test-func5.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-func5.ll > test-func5.out
+diff -b test-func5.out tests/test1/pass/test-func5.out > test-func5.diff
+###### SUCCESS
+
+###### Testing test-func6
+./m2.native -c tests/test1/pass/test-func6.m2 > test-func6.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-func6.ll > test-func6.out
+diff -b test-func6.out tests/test1/pass/test-func6.out > test-func6.diff
+###### SUCCESS
+
+###### Testing test-func7
+./m2.native -c tests/test1/pass/test-func7.m2 > test-func7.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-func7.ll > test-func7.out
+diff -b test-func7.out tests/test1/pass/test-func7.out > test-func7.diff
+###### SUCCESS
+
+###### Testing test-func8
+./m2.native -c tests/test1/pass/test-func8.m2 > test-func8.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-func8.ll > test-func8.out
+diff -b test-func8.out tests/test1/pass/test-func8.out > test-func8.diff
+###### SUCCESS
+
+###### Testing test-gcd
+./m2.native -c tests/test1/pass/test-gcd.m2 > test-gcd.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-gcd.ll > test-gcd.out
+diff -b test-gcd.out tests/test1/pass/test-gcd.out > test-gcd.diff
+###### SUCCESS
+
+###### Testing test-gcd2
+./m2.native -c tests/test1/pass/test-gcd2.m2 > test-gcd2.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-gcd2.ll > test-gcd2.out
+diff -b test-gcd2.out tests/test1/pass/test-gcd2.out > test-gcd2.diff
+###### SUCCESS
+
+###### Testing test-global1
+./m2.native -c tests/test1/pass/test-global1.m2 > test-global1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-global1.ll > test-global1.out
+diff -b test-global1.out tests/test1/pass/test-global1.out > test-global1.diff
+###### SUCCESS
+
+###### Testing test-global2
+./m2.native -c tests/test1/pass/test-global2.m2 > test-global2.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-global2.ll > test-global2.out
+diff -b test-global2.out tests/test1/pass/test-global2.out > test-global2.diff
+###### SUCCESS
+
+###### Testing test-global3
+./m2.native -c tests/test1/pass/test-global3.m2 > test-global3.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-global3.ll > test-global3.out
+diff -b test-global3.out tests/test1/pass/test-global3.out > test-global3.diff
+###### SUCCESS
+
+###### Testing test-hello
+./m2.native -c tests/test1/pass/test-hello.m2 > test-hello.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-hello.ll > test-hello.out
+diff -b test-hello.out tests/test1/pass/test-hello.out > test-hello.diff
+###### SUCCESS
+
+###### Testing test-if1
+./m2.native -c tests/test1/pass/test-if1.m2 > test-if1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-if1.ll > test-if1.out
+diff -b test-if1.out tests/test1/pass/test-if1.out > test-if1.diff
+###### SUCCESS
+
+###### Testing test-if2
+./m2.native -c tests/test1/pass/test-if2.m2 > test-if2.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-if2.ll > test-if2.out
+diff -b test-if2.out tests/test1/pass/test-if2.out > test-if2.diff
+###### SUCCESS
+
+###### Testing test-if3
+./m2.native -c tests/test1/pass/test-if3.m2 > test-if3.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-if3.ll > test-if3.out
+diff -b test-if3.out tests/test1/pass/test-if3.out > test-if3.diff
+###### SUCCESS
+
+###### Testing test-if4
+./m2.native -c tests/test1/pass/test-if4.m2 > test-if4.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-if4.ll > test-if4.out
+diff -b test-if4.out tests/test1/pass/test-if4.out > test-if4.diff
+###### SUCCESS
+
+###### Testing test-if5
+./m2.native -c tests/test1/pass/test-if5.m2 > test-if5.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-if5.ll > test-if5.out
+diff -b test-if5.out tests/test1/pass/test-if5.out > test-if5.diff
+###### SUCCESS
+
+###### Testing test-local1
+./m2.native -c tests/test1/pass/test-local1.m2 > test-local1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-local1.ll > test-local1.out
+diff -b test-local1.out tests/test1/pass/test-local1.out > test-local1.diff
+###### SUCCESS
+
+###### Testing test-local2
+./m2.native -c tests/test1/pass/test-local2.m2 > test-local2.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-local2.ll > test-local2.out
+diff -b test-local2.out tests/test1/pass/test-local2.out > test-local2.diff
+###### SUCCESS
+
+###### Testing test-ops1
+./m2.native -c tests/test1/pass/test-ops1.m2 > test-ops1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-ops1.ll > test-ops1.out
+diff -b test-ops1.out tests/test1/pass/test-ops1.out > test-ops1.diff
+###### SUCCESS
+
+###### Testing test-print
+./m2.native -c tests/test1/pass/test-print.m2 > test-print.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-print.ll > test-print.out
+diff -b test-print.out tests/test1/pass/test-print.out > test-print.diff
+###### SUCCESS
+
+###### Testing test-var1
+./m2.native -c tests/test1/pass/test-var1.m2 > test-var1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-var1.ll > test-var1.out
+diff -b test-var1.out tests/test1/pass/test-var1.out > test-var1.diff
+###### SUCCESS
+
+###### Testing test-var2
+./m2.native -c tests/test1/pass/test-var2.m2 > test-var2.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-var2.ll > test-var2.out
+diff -b test-var2.out tests/test1/pass/test-var2.out > test-var2.diff
+###### SUCCESS
+
+###### Testing test-while1
+./m2.native -c tests/test1/pass/test-while1.m2 > test-while1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-while1.ll > test-while1.out
+diff -b test-while1.out tests/test1/pass/test-while1.out > test-while1.diff
+###### SUCCESS
+
+###### Testing test-while2
+./m2.native -c tests/test1/pass/test-while2.m2 > test-while2.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-while2.ll > test-while2.out
+diff -b test-while2.out tests/test1/pass/test-while2.out > test-while2.diff
+###### SUCCESS
+
+###### Testing fail-assign1
+./m2.native -c tests/test1/fail/fail-assign1.m2 2> fail-assign1.err >> testall.log
+diff -b fail-assign1.err tests/test1/fail/fail-assign1.err > fail-assign1.diff
+###### SUCCESS
+
+###### Testing fail-assign2
+./m2.native -c tests/test1/fail/fail-assign2.m2 2> fail-assign2.err >> testall.log
+diff -b fail-assign2.err tests/test1/fail/fail-assign2.err > fail-assign2.diff
+###### SUCCESS
+
+###### Testing fail-assign3
+./m2.native -c tests/test1/fail/fail-assign3.m2 2> fail-assign3.err >> testall.log
+diff -b fail-assign3.err tests/test1/fail/fail-assign3.err > fail-assign3.diff
+###### SUCCESS
+
+###### Testing fail-expr1
+./m2.native -c tests/test1/fail/fail-expr1.m2 2> fail-expr1.err >> testall.log
+diff -b fail-expr1.err tests/test1/fail/fail-expr1.err > fail-expr1.diff
+###### SUCCESS
+
+###### Testing fail-expr2
+./m2.native -c tests/test1/fail/fail-expr2.m2 2> fail-expr2.err >> testall.log
+diff -b fail-expr2.err tests/test1/fail/fail-expr2.err > fail-expr2.diff
+###### SUCCESS
+
+###### Testing fail-for1
+./m2.native -c tests/test1/fail/fail-for1.m2 2> fail-for1.err >> testall.log
+diff -b fail-for1.err tests/test1/fail/fail-for1.err > fail-for1.diff
+###### SUCCESS
+
+###### Testing fail-for2
+./m2.native -c tests/test1/fail/fail-for2.m2 2> fail-for2.err >> testall.log
+diff -b fail-for2.err tests/test1/fail/fail-for2.err > fail-for2.diff
+###### SUCCESS
+
+###### Testing fail-for3
+./m2.native -c tests/test1/fail/fail-for3.m2 2> fail-for3.err >> testall.log
+diff -b fail-for3.err tests/test1/fail/fail-for3.err > fail-for3.diff
+###### SUCCESS
+
+###### Testing fail-func1
+./m2.native -c tests/test1/fail/fail-func1.m2 2> fail-func1.err >> testall.log
+diff -b fail-func1.err tests/test1/fail/fail-func1.err > fail-func1.diff
+###### SUCCESS
+
+###### Testing fail-func2
+./m2.native -c tests/test1/fail/fail-func2.m2 2> fail-func2.err >> testall.log
+diff -b fail-func2.err tests/test1/fail/fail-func2.err > fail-func2.diff
+###### SUCCESS
+
+###### Testing fail-func3
+./m2.native -c tests/test1/fail/fail-func3.m2 2> fail-func3.err >> testall.log
+diff -b fail-func3.err tests/test1/fail/fail-func3.err > fail-func3.diff
+###### SUCCESS
+
+###### Testing fail-func4
+./m2.native -c tests/test1/fail/fail-func4.m2 2> fail-func4.err >> testall.log
+diff -b fail-func4.err tests/test1/fail/fail-func4.err > fail-func4.diff
+###### SUCCESS
+
+###### Testing fail-func5
+./m2.native -c tests/test1/fail/fail-func5.m2 2> fail-func5.err >> testall.log
+diff -b fail-func5.err tests/test1/fail/fail-func5.err > fail-func5.diff
+###### SUCCESS
+
+###### Testing fail-func6
+./m2.native -c tests/test1/fail/fail-func6.m2 2> fail-func6.err >> testall.log
+diff -b fail-func6.err tests/test1/fail/fail-func6.err > fail-func6.diff
+###### SUCCESS
+
+###### Testing fail-func7
+./m2.native -c tests/test1/fail/fail-func7.m2 2> fail-func7.err >> testall.log
+diff -b fail-func7.err tests/test1/fail/fail-func7.err > fail-func7.diff
+###### SUCCESS
+
+###### Testing fail-global1
+./m2.native -c tests/test1/fail/fail-global1.m2 2> fail-global1.err >> testall.log
+diff -b fail-global1.err tests/test1/fail/fail-global1.err > fail-global1.diff
+###### SUCCESS
+
+###### Testing fail-global2
+./m2.native -c tests/test1/fail/fail-global2.m2 2> fail-global2.err >> testall.log
+diff -b fail-global2.err tests/test1/fail/fail-global2.err > fail-global2.diff
+###### SUCCESS
+
+###### Testing fail-if1
+./m2.native -c tests/test1/fail/fail-if1.m2 2> fail-if1.err >> testall.log
+diff -b fail-if1.err tests/test1/fail/fail-if1.err > fail-if1.diff
+###### SUCCESS
+
+###### Testing fail-if2
+./m2.native -c tests/test1/fail/fail-if2.m2 2> fail-if2.err >> testall.log
+diff -b fail-if2.err tests/test1/fail/fail-if2.err > fail-if2.diff
+###### SUCCESS
+
+###### Testing fail-nomain
+./m2.native -c tests/test1/fail/fail-nomain.m2 2> fail-nomain.err >> testall.log
+diff -b fail-nomain.err tests/test1/fail/fail-nomain.err > fail-nomain.diff
+###### SUCCESS
+
+###### Testing fail-while
+./m2.native -c tests/test1/fail/fail-while.m2 2> fail-while.err >> testall.log
+diff -b fail-while.err tests/test1/fail/fail-while.err > fail-while.diff
+###### SUCCESS
+
+###### Testing test-controlFlow
+./m2.native -c tests/test2/pass/test-controlFlow.m2 > test-controlFlow.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-controlFlow.ll > test-controlFlow.out
+diff -b test-controlFlow.out tests/test2/pass/test-controlFlow.out > test-controlFlow.diff
+###### SUCCESS
+
+###### Testing test-dataTypes
+./m2.native -c tests/test2/pass/test-dataTypes.m2 > test-dataTypes.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-dataTypes.ll > test-dataTypes.out
+diff -b test-dataTypes.out tests/test2/pass/test-dataTypes.out > test-dataTypes.diff
+###### SUCCESS
+
+###### Testing test-floatDet22
+./m2.native -c tests/test2/pass/test-floatDet22.m2 > test-floatDet22.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-floatDet22.ll > test-floatDet22.out
+diff -b test-floatDet22.out tests/test2/pass/test-floatDet22.out > test-floatDet22.diff
+###### SUCCESS
+
+###### Testing test-floatDet33
+./m2.native -c tests/test2/pass/test-floatDet33.m2 > test-floatDet33.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-floatDet33.ll > test-floatDet33.out
+diff -b test-floatDet33.out tests/test2/pass/test-floatDet33.out > test-floatDet33.diff
+###### SUCCESS
+
+###### Testing test-floatMatrixAccess
+./m2.native -c tests/test2/pass/test-floatMatrixAccess.m2 > test-floatMatrixAccess.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-floatMatrixAccess.ll > test-floatMatrixAccess.out
+diff -b test-floatMatrixAccess.out tests/test2/pass/test-floatMatrixAccess.out > test-floatMatrixAccess.diff
+###### SUCCESS
+
+###### Testing test-floatMatrixBinop1
+./m2.native -c tests/test2/pass/test-floatMatrixBinop1.m2 > test-floatMatrixBinop1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-floatMatrixBinop1.ll > test-floatMatrixBinop1.out
+diff -b test-floatMatrixBinop1.out tests/test2/pass/test-floatMatrixBinop1.out > test-floatMatrixBinop1.diff
+###### SUCCESS
+
+###### Testing test-floatMatrixBinop2
+./m2.native -c tests/test2/pass/test-floatMatrixBinop2.m2 > test-floatMatrixBinop2.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-floatMatrixBinop2.ll > test-floatMatrixBinop2.out
+diff -b test-floatMatrixBinop2.out tests/test2/pass/test-floatMatrixBinop2.out > test-floatMatrixBinop2.diff
+###### SUCCESS
+
+###### Testing test-floatMatrixFunc
+./m2.native -c tests/test2/pass/test-floatMatrixFunc.m2 > test-floatMatrixFunc.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-floatMatrixFunc.ll > test-floatMatrixFunc.out
+diff -b test-floatMatrixFunc.out tests/test2/pass/test-floatMatrixFunc.out > test-floatMatrixFunc.diff
+###### SUCCESS
+
+###### Testing test-for
+./m2.native -c tests/test2/pass/test-for.m2 > test-for.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-for.ll > test-for.out
+diff -b test-for.out tests/test2/pass/test-for.out > test-for.diff
+###### SUCCESS
+
+###### Testing test-graph
+./m2.native -c tests/test2/pass/test-graph.m2 > test-graph.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-graph.ll > test-graph.out
+diff -b test-graph.out tests/test2/pass/test-graph.out > test-graph.diff
+###### SUCCESS
+
+###### Testing test-intDet22
+./m2.native -c tests/test2/pass/test-intDet22.m2 > test-intDet22.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-intDet22.ll > test-intDet22.out
+diff -b test-intDet22.out tests/test2/pass/test-intDet22.out > test-intDet22.diff
+###### SUCCESS
+
+###### Testing test-intDet33
+./m2.native -c tests/test2/pass/test-intDet33.m2 > test-intDet33.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-intDet33.ll > test-intDet33.out
+diff -b test-intDet33.out tests/test2/pass/test-intDet33.out > test-intDet33.diff
+###### SUCCESS
+
+###### Testing test-intMatrixAccess
+./m2.native -c tests/test2/pass/test-intMatrixAccess.m2 > test-intMatrixAccess.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-intMatrixAccess.ll > test-intMatrixAccess.out
+diff -b test-intMatrixAccess.out tests/test2/pass/test-intMatrixAccess.out > test-intMatrixAccess.diff
+###### SUCCESS
+
+###### Testing test-intMatrixBinop1
+./m2.native -c tests/test2/pass/test-intMatrixBinop1.m2 > test-intMatrixBinop1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-intMatrixBinop1.ll > test-intMatrixBinop1.out
+diff -b test-intMatrixBinop1.out tests/test2/pass/test-intMatrixBinop1.out > test-intMatrixBinop1.diff
+###### SUCCESS
+
+###### Testing test-intMatrixBinop2
+./m2.native -c tests/test2/pass/test-intMatrixBinop2.m2 > test-intMatrixBinop2.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-intMatrixBinop2.ll > test-intMatrixBinop2.out
+diff -b test-intMatrixBinop2.out tests/test2/pass/test-intMatrixBinop2.out > test-intMatrixBinop2.diff
+###### SUCCESS
+
+###### Testing test-intMatrixFunc
+./m2.native -c tests/test2/pass/test-intMatrixFunc.m2 > test-intMatrixFunc.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-intMatrixFunc.ll > test-intMatrixFunc.out
+diff -b test-intMatrixFunc.out tests/test2/pass/test-intMatrixFunc.out > test-intMatrixFunc.diff
+###### SUCCESS
+
+###### Testing test-inverse
+./m2.native -c tests/test2/pass/test-inverse.m2 > test-inverse.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-inverse.ll > test-inverse.out
+diff -b test-inverse.out tests/test2/pass/test-inverse.out > test-inverse.diff
+###### SUCCESS
+
+###### Testing test-matrixChainMult
+./m2.native -c tests/test2/pass/test-matrixChainMult.m2 > test-matrixChainMult.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-matrixChainMult.ll > test-matrixChainMult.out
+diff -b test-matrixChainMult.out tests/test2/pass/test-matrixChainMult.out > test-matrixChainMult.diff
+###### SUCCESS
+
+###### Testing test-norm1
+./m2.native -c tests/test2/pass/test-norm1.m2 > test-norm1.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-norm1.ll > test-norm1.out
+diff -b test-norm1.out tests/test2/pass/test-norm1.out > test-norm1.diff
+###### SUCCESS
+
+###### Testing test-pow
+./m2.native -c tests/test2/pass/test-pow.m2 > test-pow.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-pow.ll > test-pow.out
+diff -b test-pow.out tests/test2/pass/test-pow.out > test-pow.diff
+###### SUCCESS
+
+###### Testing test-print
+./m2.native -c tests/test2/pass/test-print.m2 > test-print.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-print.ll > test-print.out
+diff -b test-print.out tests/test2/pass/test-print.out > test-print.diff
+###### SUCCESS
+
+###### Testing test-solveEqn2by2
+./m2.native -c tests/test2/pass/test-solveEqn2by2.m2 > test-solveEqn2by2.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-solveEqn2by2.ll > test-solveEqn2by2.out
+diff -b test-solveEqn2by2.out tests/test2/pass/test-solveEqn2by2.out > test-solveEqn2by2.diff
+###### SUCCESS
+
+###### Testing test-solveEqn3by3
+./m2.native -c tests/test2/pass/test-solveEqn3by3.m2 > test-solveEqn3by3.ll
+/usr/local/opt/llvm@3.7/bin/lli-3.7 test-solveEqn3by3.ll > test-solveEqn3by3.out
+diff -b test-solveEqn3by3.out tests/test2/pass/test-solveEqn3by3.out > test-solveEqn3by3.diff
+###### SUCCESS
+
+###### Testing fail-duplicateGlobal
+./m2.native -c tests/test2/fail/fail-duplicateGlobal.m2 2> fail-duplicateGlobal.err >> testall.log
+diff -b fail-duplicateGlobal.err tests/test2/fail/fail-duplicateGlobal.err > fail-duplicateGlobal.diff
+###### SUCCESS
+
+###### Testing fail-equality
+./m2.native -c tests/test2/fail/fail-equality.m2 2> fail-equality.err >> testall.log
+diff -b fail-equality.err tests/test2/fail/fail-equality.err > fail-equality.diff
+###### SUCCESS
+
+###### Testing fail-functionArgument
+./m2.native -c tests/test2/fail/fail-functionArgument.m2 2> fail-functionArgument.err >> testall.log
+diff -b fail-functionArgument.err tests/test2/fail/fail-functionArgument.err > fail-functionArgument.diff
+###### SUCCESS
+
+###### Testing fail-logical
+./m2.native -c tests/test2/fail/fail-logical.m2 2> fail-logical.err >> testall.log
+diff -b fail-logical.err tests/test2/fail/fail-logical.err > fail-logical.diff
+###### SUCCESS
+
+###### Testing fail-matrixAccess
+./m2.native -c tests/test2/fail/fail-matrixAccess.m2 2> fail-matrixAccess.err >> testall.log
+diff -b fail-matrixAccess.err tests/test2/fail/fail-matrixAccess.err > fail-matrixAccess.diff
+###### SUCCESS
+
+###### Testing fail-matrixBinop
+./m2.native -c tests/test2/fail/fail-matrixBinop.m2 2> fail-matrixBinop.err >> testall.log
+diff -b fail-matrixBinop.err tests/test2/fail/fail-matrixBinop.err > fail-matrixBinop.diff
+###### SUCCESS
+
+###### Testing fail-matrixBinop2
+./m2.native -c tests/test2/fail/fail-matrixBinop2.m2 2> fail-matrixBinop2.err >> testall.log
+diff -b fail-matrixBinop2.err tests/test2/fail/fail-matrixBinop2.err > fail-matrixBinop2.diff
+###### SUCCESS
+
+###### Testing fail-matrixBinop3
+./m2.native -c tests/test2/fail/fail-matrixBinop3.m2 2> fail-matrixBinop3.err >> testall.log
+diff -b fail-matrixBinop3.err tests/test2/fail/fail-matrixBinop3.err > fail-matrixBinop3.diff
+###### SUCCESS
+
+###### Testing fail-matrixBinop4
+./m2.native -c tests/test2/fail/fail-matrixBinop4.m2 2> fail-matrixBinop4.err >> testall.log
+diff -b fail-matrixBinop4.err tests/test2/fail/fail-matrixBinop4.err > fail-matrixBinop4.diff
+###### SUCCESS
+
+###### Testing fail-matrixBinop5
+./m2.native -c tests/test2/fail/fail-matrixBinop5.m2 2> fail-matrixBinop5.err >> testall.log
+diff -b fail-matrixBinop5.err tests/test2/fail/fail-matrixBinop5.err > fail-matrixBinop5.diff
+###### SUCCESS
+
+###### Testing fail-matrixBinop6
+./m2.native -c tests/test2/fail/fail-matrixBinop6.m2 2> fail-matrixBinop6.err >> testall.log
+diff -b fail-matrixBinop6.err tests/test2/fail/fail-matrixBinop6.err > fail-matrixBinop6.diff
+###### SUCCESS
+
+###### Testing fail-matrixDim
+./m2.native -c tests/test2/fail/fail-matrixDim.m2 2> fail-matrixDim.err >> testall.log
+diff -b fail-matrixDim.err tests/test2/fail/fail-matrixDim.err > fail-matrixDim.diff
+###### SUCCESS
+
+###### Testing fail-mismatchedAssign
+./m2.native -c tests/test2/fail/fail-mismatchedAssign.m2 2> fail-mismatchedAssign.err >> testall.log
+diff -b fail-mismatchedAssign.err tests/test2/fail/fail-mismatchedAssign.err > fail-mismatchedAssign.diff
+###### SUCCESS
+
+###### Testing fail-moreThanOneTypeInMat
+./m2.native -c tests/test2/fail/fail-moreThanOneTypeInMat.m2 2> fail-moreThanOneTypeInMat.err >> testall.log
+diff -b fail-moreThanOneTypeInMat.err tests/test2/fail/fail-moreThanOneTypeInMat.err > fail-moreThanOneTypeInMat.diff
+###### SUCCESS
+
+###### Testing fail-print
+./m2.native -c tests/test2/fail/fail-print.m2 2> fail-print.err >> testall.log
+diff -b fail-print.err tests/test2/fail/fail-print.err > fail-print.diff
+###### SUCCESS
+
+###### Testing fail-stringBinop
+./m2.native -c tests/test2/fail/fail-stringBinop.m2 2> fail-stringBinop.err >> testall.log
+diff -b fail-stringBinop.err tests/test2/fail/fail-stringBinop.err > fail-stringBinop.diff
+###### SUCCESS
+
+###### Testing fail-subMatrix
+./m2.native -c tests/test2/fail/fail-subMatrix.m2 2> fail-subMatrix.err >> testall.log
+diff -b fail-subMatrix.err tests/test2/fail/fail-subMatrix.err > fail-subMatrix.diff
+###### SUCCESS
+
+###### Testing fail-trace
+./m2.native -c tests/test2/fail/fail-trace.m2 2> fail-trace.err >> testall.log
+diff -b fail-trace.err tests/test2/fail/fail-trace.err > fail-trace.diff
+###### SUCCESS
+
+###### Testing fail-transpose
+./m2.native -c tests/test2/fail/fail-transpose.m2 2> fail-transpose.err >> testall.log
+diff -b fail-transpose.err tests/test2/fail/fail-transpose.err > fail-transpose.diff
+###### SUCCESS
+
+###### Testing fail-unop
+./m2.native -c tests/test2/fail/fail-unop.m2 2> fail-unop.err >> testall.log
+diff -b fail-unop.err tests/test2/fail/fail-unop.err > fail-unop.diff
+###### SUCCESS
